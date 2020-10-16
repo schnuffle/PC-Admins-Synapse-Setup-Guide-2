@@ -20,10 +20,10 @@ location /_matrix/identity {
 #### Synapse
 Add your ma1sd domain into the homeserver.yaml at trusted_third_party_id_servers and restart synapse.
 In a typical configuration, you would end up with something similar to:
-
+```
 trusted_third_party_id_servers:
     - matrix.example.org
-
+```
 It is highly recommended to remove matrix.org and vector.im (or any other default entry) from your configuration so only your own Identity server is authoritative for your HS.
 
 #### Ma1sd
